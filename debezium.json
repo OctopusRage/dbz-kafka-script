@@ -1,5 +1,5 @@
 {
-  "name": "exampledb-connector",
+  "name": "mc-connector",
   "config": {
     "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
     "plugin.name": "pgoutput",
@@ -9,6 +9,7 @@
     "database.password": "docker",
     "database.dbname": "exampledb",
     "database.server.name": "mc",
-    "table.include.list": "public.student"
+    "table.include.list": "public.student",
+    "heartbeat.interval.ms": 60000
   }
 }
